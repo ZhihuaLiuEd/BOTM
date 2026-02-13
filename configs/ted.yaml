@@ -1,0 +1,35 @@
+experiment_name: "BOTM_TED"
+
+train:
+  data_root: "./dataset/TED"
+  save_dir: "./checkpoints"
+  
+  epochs: 501
+  batch_size: 2
+  num_workers: 4
+  lr: 0.001
+  momentum: 0.9
+  
+  resume: null
+  val_interval: 20
+  save_interval: 50
+
+dataset:
+  name: "TED"
+  image_size: 672
+
+model:
+  in_channels: 1
+  num_classes: 3
+  decoder_channels: 256
+  
+  widths: [64, 128, 256, 512]
+  depths: [3, 4, 6, 3]
+  all_num_heads: [1, 2, 4, 8]
+  patch_sizes: [7, 3, 3, 3]
+  overlap_sizes: [4, 2, 2, 2]
+  reduction_ratios: [8, 4, 2, 1]
+  mlp_expansions: [4, 4, 4, 4]
+  scale_factors: [1, 2, 4, 8]
+  
+  drop_prob: 0.0

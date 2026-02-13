@@ -1,0 +1,43 @@
+experiment_name: "BOTM_CAMUS_2CH"
+
+train:
+  data_root: "./dataset/CAMUS/training"
+  save_dir: "./checkpoints"
+  
+  epochs: 501
+  batch_size: 8
+  num_workers: 8
+  lr: 0.001
+  momentum: 0.9
+  weight_decay: 0.0001
+
+  resume: null           
+  val_interval: 10
+  save_interval: 50
+
+  val_split: True
+  val_split_ratio: 0.1
+
+test:
+  data_root: "./dataset/CAMUS/testing"
+
+dataset:
+  name: "CAMUS"
+  view: "2CH"
+  image_size: 672
+
+model:
+  in_channels: 1
+  num_classes: 4
+  decoder_channels: 256
+  
+  widths: [64, 128, 256, 512]
+  depths: [3, 4, 6, 3]
+  all_num_heads: [1, 2, 4, 8]
+  patch_sizes: [7, 3, 3, 3]
+  overlap_sizes: [4, 2, 2, 2]
+  reduction_ratios: [8, 4, 2, 1]
+  mlp_expansions: [4, 4, 4, 4]
+  scale_factors: [1, 2, 4, 8]
+  
+  drop_prob: 0.0

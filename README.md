@@ -6,8 +6,7 @@
 
 **Official PyTorch implementation of the BMVC 2025 paper: "BOTM: Echocardiography Segmentation via Bi-directional Optimal Token Matching".**
 
-> **Authors:** Zhihua Liu, Lei Tong, Xilin He, Che Liu, Rossella Arcucci, Chen Jin, Huiyu Zhou  
-> **Affiliation:** [University of Leicester / Imperial College London] (Update with your actual affiliation)  
+> **Authors:** Zhihua Liu, Lei Tong, Xilin He, Che Liu, Rossella Arcucci, Chen Jin, Huiyu Zhou   
 > **Conference:** British Machine Vision Conference (BMVC), 2025
 
 ---
@@ -19,14 +18,15 @@
 ## Acknowledgements
 This project is built upon the excellent work of SegFormer. We thank the authors for their open-source contribution.
 
-SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers
+[SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers](https://github.com/NVlabs/SegFormer)
 
 ## Citation
 If you find this code or paper useful for your research, please cite our work:
-
+```
 @inproceedings{liu2025botm,
   title={BOTM: Echocardiography Segmentation via Bi-directional Optimal Token Matching},
   author={Liu, Zhihua and Tong, Lei and He, Xilin and Liu, Che and Arcucci, Rossella and Jin, Chen and Zhou, Huiyu},
   booktitle={36th British Machine Vision Conference (BMVC)},
   year={2025}
 }
+```
